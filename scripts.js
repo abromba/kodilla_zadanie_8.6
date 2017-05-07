@@ -2,7 +2,7 @@ var a = Number(prompt('Podaj jakąś liczbę A'));
 var b = Number(prompt('Podaj jakąś liczbę B'));
 var result = (a * a) + (2 * a * b) - (b * b);
 
-if (Number.isNaN(a&&b)){
+if (Number.isNaN(a) || Number.isNaN(b)){
     console.log('Nie mogę tego policzyć, bo pomyliłeś się wpisując dane. Spróbuj jeszcze raz!');
 } else {
     console.log('wynik działania (a * a) + (2 * a * b) - (b * b) to: ' + result);
